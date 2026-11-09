@@ -54,6 +54,8 @@ This is an early version of the project, therefore it's ~~fucking shit~~ got a f
 - Chan-chan expects `.chan` files to follow its original formatting. Manually modifying files into an invalid format may prevent them from loading. But that's kind of on you.
 - Character information is stored and loaded on a single line. Multi-line traits are not currently supported.
 - `.chan` files are stored in the directory from which the program is run.
+- Non-numeric input when creating a character's age can cause the program to terminate. Again, kinda on you, cause who the hell is typing out numbers in words.
+- The program doesn't currently handle corrupted or incorrectly formatted `.chan` files as gracefully as I'd have liked it to.
 
 Future improvements will be attempts to fix these various issues.
 
