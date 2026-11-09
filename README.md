@@ -29,7 +29,7 @@ Photos/screenshots at the bottom!!
 - Run the Python file from your terminal:
 
 ```
-python chanchan.py
+python chan_chan.py
 ```
 
 Or `py` if it doesn't work for whatever reason.
