@@ -1,4 +1,4 @@
-# Chan-chan: to save people to their own special '.chan' file <3 (v1.0)
+# Chan-chan: to save people to their own special `.chan` file <3 (v1.0)
 Reused parts from my older [python file system simulator](https://github.com/pnuggie/python-file-system-simulator) to make this.
 
 ## About ^_^
