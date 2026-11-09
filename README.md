@@ -7,6 +7,8 @@ Chan-chan is a small Python command-line program that lets you create, view, sea
 
 **Warning**: swearing. Haha
 
+Photos/screenshots at the bottom!!
+
 ## Features!
 
 - Create individual `.chan` character files!
@@ -58,6 +60,11 @@ This is an early version of the project, therefore it's ~~fucking shit~~ got a f
 - The program doesn't currently handle corrupted or incorrectly formatted `.chan` files as gracefully as I'd have liked it to.
 
 Future improvements will be attempts to fix these various issues.
+
+## Things I discovered
+Pathlib and glob. i am the globglobglankalab the shabadabadobadibalagaslag 
+
+They are interesting though, so I'll have to do some extra learning on them before I add them in any other projects. It's here cause I asked Google very kindly what I could do so it suggested me these. 
 
 ## Here's some photos!
 
