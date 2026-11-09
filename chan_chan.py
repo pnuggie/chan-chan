@@ -1,4 +1,3 @@
-import time
 from time import sleep
 import glob # LMAO
 from pathlib import Path # another new thing im adding. i dont want to mess with os, so google said this should work...
@@ -45,9 +44,9 @@ print(r"""
 ░█████╗░██╗░░██╗░█████╗░███╗░░██╗░░░░░░░█████╗░██╗░░██╗░█████╗░███╗░░██╗
 ██╔══██╗██║░░██║██╔══██╗████╗░██║░░░░░░██╔══██╗██║░░██║██╔══██╗████╗░██║
 ██║░░╚═╝███████║███████║██╔██╗██║█████╗██║░░╚═╝███████║███████║██╔██╗██║
-██║░░██╗██╔══██║██╔══██║██║╚████║╚════╝██║░░██╗██╔══██║██╔══██║██║╚████║
+██║░░██╗██╔══██╗██╔══██╗██║╚████║╚════╝██║░░██╗██╔══██╗██╔══██╗██║╚████║
 ╚█████╔╝██║░░██║██║░░██║██║░╚███║░░░░░░╚█████╔╝██║░░██║██║░░██║██║░╚███║
-░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝░░░░░░░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝
+░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝░░░░░░░░░░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝
 
 """) # required
 
@@ -55,7 +54,7 @@ files = []
 loadfiles()
     
 while True: # nice menu huh
-    print("Chan-chan: to save your characters to their own special '.chan' file <3 (v1.0)")
+    print("Chan-chan: to save anyone to their own special '.chan' file <3 (v1.0)")
     print()
     print("loading Chan-chan...")
     sleep(2)
@@ -80,7 +79,13 @@ while True: # nice menu huh
 
     if choice == 1: # asks for all the content info whatever needed
         name = input("character name: ")
-        age = int(input("character age: "))
+
+        try:
+            age = int(input("character age: "))
+        except ValueError:
+            print("age must be a number!")
+            continue
+
         traits = input("character traits: ")
 
         if name.lower() == "chan-chan":
@@ -172,11 +177,13 @@ while True: # nice menu huh
 
                 if changeitem == "name":
                     oldfilename = f["name"] + ".chan"
+                    newname = input("new name: ")
 
                     if newname.lower() == f["name"].lower():
                         print("that's already their name! this might cause a problem with files if you force it.")
+                        break
 
-                    f["name"] = input("new name: ")
+                    f["name"] = newname
                     savefiles()
 
                     Path(oldfilename).unlink() # delete og after replacement. this save is important.
@@ -231,7 +238,8 @@ while True: # nice menu huh
         sleep(1)
         print()
         print("Chan-chan has no gender, as Chan-chan doesn't give a shit.")
+        print()
 
     else:
-        print("invalid choice, please select 1-5")
+        print("invalid choice, please select 1-7")
         print()
