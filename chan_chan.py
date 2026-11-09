@@ -186,7 +186,7 @@ while True: # nice menu huh
                     f["name"] = newname
                     savefiles()
 
-                    Path(oldfilename).unlink() # delete og after replacement. this save is important.
+                    Path(oldfilename).unlink() # delete og after replacement. this save is important
 
                 elif changeitem == "age":
                     try:
@@ -206,7 +206,7 @@ while True: # nice menu huh
                 print()
                 print("now its:", f["name"], f["age"], f["traits"])
 
-                break # i dont even need an else here, waow
+                break
 
         if not found:
             print("file not found. :(")
