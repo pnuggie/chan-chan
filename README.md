@@ -49,7 +49,7 @@ The `.chan` extension is custom to this project. Currently, the files are plain-
 
 ## Limitations in v1.0
 
-This is an early version of the project, therefore it's ~~fucking shit~~ got a few issues, mostly regarding user error and developer tiredness. Here's a list:
+This is an early version of the project, therefore it's ~~fucking shit~~ got a few issues, mostly regarding problems if there's a user error. Here's a list:
 
 - Character names are used as filenames, meaning duplicate names can overwrite existing character files.
 - `.chan` files use a simple pipe-separated format (`name|age|traits`). Names and traits containing the `|` character can cause loading errors. Very basic I know.
