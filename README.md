@@ -60,19 +60,30 @@ Future improvements will be attempts to fix these various issues.
 ## Here's some photos!
 
 <img width="839" height="404" alt="image" src="https://github.com/user-attachments/assets/6cf1db08-f7a0-4158-9d18-51523f4ac1c8" />
+
 What you see when you first open Chan-chan.
 
+
 <img width="350" height="84" alt="image" src="https://github.com/user-attachments/assets/5cdb05e6-1843-48ee-81e2-cc43cccd3723" />
+
 Change specific categories of the character file rather than the entire thing. This is an improvement from the original file sim.
 
+
 <img width="443" height="460" alt="image" src="https://github.com/user-attachments/assets/e435f4ec-9843-43ca-8a22-da94248d6135" />
+
 Add a character. Search up the character with same letters even if not the same case. It's cool.
 
+
 <img width="323" height="118" alt="image" src="https://github.com/user-attachments/assets/04dcb141-53af-436f-8c3b-add161515572" />
+
 The `.chan` file in action.
 
+
 <img width="227" height="121" alt="image" src="https://github.com/user-attachments/assets/7b902390-df35-4e63-9c73-7f48b435274b" />
+
 It remembers how many `.chan` files there are. This is due to `glob.glob("*.chan")` (glob will never not be funny) which returns a list of file paths with my custom extension.
 
+
 <img width="421" height="87" alt="image" src="https://github.com/user-attachments/assets/223a3862-b737-4a21-a66b-403a4f905147" />
+
 Little easter egg.
