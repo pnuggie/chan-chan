@@ -43,7 +43,7 @@ Each character is stored in a separate `.chan` file. The files contain basic cha
 - Traits
     - however these can kind of be whatever you want, its a long string anyway ¯\_(ツ)_/¯
 
-The `.chan` extension is custom to this project, as the files are currently plain-text files rather than an *actual* file format. But it's pretty convincing, right?!
+The `.chan` extension is custom to this project. Currently, the files are plain-text files using a simple structure rather than an established file format. But it's pretty convincing, right?!
 
 ## Limitations in v1.0
 
