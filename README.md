@@ -1,6 +1,8 @@
 # Chan-chan: to save people to their own special `.chan` file <3 (v1.0)
 Reused parts from my older [python file system simulator](https://github.com/pnuggie/python-file-system-simulator) to make this.
 
+It's very much still in development.
+
 ## About ^_^
 
 Chan-chan is a small Python command-line program that lets you create, view, search, edit, and delete character files using a custom `.chan` file extension. It started as a joke after accidentally typing .chan instead of -chan. I am a loser, you see. But I would *never* stoop to those losercore playlist levels of loserism. Nonetheless, please enjoy!
